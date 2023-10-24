@@ -32,11 +32,19 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcv"
-        android:layout_below="@+id/toolbar"
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/tabLayout"
+        app:tabTextColor="@color/black"
+        android:background="@color/white"
+        app:tabIndicatorColor="#0F259F"
+        app:tabSelectedTextColor="#2E45CC"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpage2"
+        android:layout_marginTop="100dp"/>
 
 </RelativeLayout>
